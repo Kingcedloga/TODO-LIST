@@ -32,7 +32,7 @@ const EditTodo = ({ todo }) => {
         data-toggle="modal"
         data-target={`#id${todo.todo_id}`}
       >
-        Edit
+        Modifier
       </button>
 
       {/* 
@@ -46,7 +46,7 @@ const EditTodo = ({ todo }) => {
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title">Edit Todo</h4>
+              <h4 class="modal-title">Modifier Todo</h4>
               <button
                 type="button"
                 class="close"
@@ -73,7 +73,7 @@ const EditTodo = ({ todo }) => {
                 data-dismiss="modal"
                 onClick={e => updateDescription(e)}
               >
-                Edit
+                Modifier
               </button>
               <button
                 type="button"
@@ -81,7 +81,7 @@ const EditTodo = ({ todo }) => {
                 data-dismiss="modal"
                 onClick={() => setDescription(todo.description)}
               >
-                Close
+                Fermer
               </button>
             </div>
           </div>
